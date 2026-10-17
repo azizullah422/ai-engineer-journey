@@ -14,3 +14,15 @@ print(student["role"])
 print(student["hours"])
 for key, value in student.items():
     print(key, ":", value)
+    
+    print(student.get("name"))
+
+if "Python" in student:
+    print("Found")
+else:
+    print("Not found")  
+    
+    student["skill"] = "Python"
+
+print(student.get("skill"))
+print("skill" in student)
